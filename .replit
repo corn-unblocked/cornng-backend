@@ -5,7 +5,7 @@ run = "cargo run"
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "cargo run"]
+run = ["sh", "-c", "cargo run --release"]
 
 [[ports]]
 localPort = 4000
