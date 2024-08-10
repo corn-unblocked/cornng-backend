@@ -1,0 +1,13 @@
+modules = ["rust-stable"]
+run = "cargo run"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "cargo run"]
+
+[[ports]]
+localPort = 4000
+externalPort = 3000
+exposeLocalhost = true
