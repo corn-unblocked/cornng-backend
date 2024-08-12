@@ -182,7 +182,7 @@ pub fn validate_config_cache() {
 impl Default for ServerConfig {
 	fn default() -> Self {
 		Self {
-			bind: "127.0.0.1:4000".to_string(),
+			bind: "0.0.0.0:4000".to_string(),
 			socket: SocketType::default(),
 			resolve_ipv6: false,
 			tcp_nodelay: false,
